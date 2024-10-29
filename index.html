@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Best Friend!</title>
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #333;
+            background-image: url(image.jpg);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            height: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background-image: url(sky.jpg);
+        }
+
+        /* Slide Styles */
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s, transform 1s;
+            transform: translateX(100%);
+            background-image: url(background.jpg);
+            color: black;
+            
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #f5576c;
+            margin: 20px 0;
+            animation: fadeIn 2s;
+        }
+
+        .birthday-paragraph {
+            font-size: 1.1em;
+            color: #666;
+            max-width: 80%;
+            margin: 15px auto;
+            padding: 10px;
+            background-color: #ffe6e6;
+            border-radius: 8px;
+            line-height: 1.6;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 80%;
+            margin: 15px 0;
+        }
+
+        /* Image Styling */
+        .slide img {
+            width: 70%;
+            max-width: 300px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 2s;
+            
+        }
+
+        .button {
+            background-color: #f5576c;
+            color:black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #e34d5b;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            bottom: 20px;
+            padding: 0 20px;
+            color: black;
+        }
+
+        .nav-button {
+            font-size: 1.5em;
+            background: none;
+            border: none;
+            color: black;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .nav-button:hover {
+            color: #e34d5b;
+        }
+
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f5576c;
+            border-radius: 50%;
+            top: -20px;
+            animation: confetti-fall 2s linear infinite;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.5); }
+            to { transform: scale(1); }
+        }
+
+        @keyframes confetti-fall {
+            0% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(100vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="birthday-paragraph">
+            Happy Birthday to the most amazing friend! I'm so grateful for every laugh yrr tu meri life ki sbsa ashi dost ha yrr,tuja har chiiz share krta hu.pta jb sa tu friend bna ha na kitna mza ha yrr kbi nhi lgta phla kitni tuti ha. I hope this year brings you as much happiness and teri sari wishes puri ho.you are worlds most precious diamond yrr...hmasha mera friend rhna ok
+        </div>
+
+
+        <div class="slide active">
+            <h1>Happy Birthday My best Buddy</h1>
+            <p>Your special day has arrived. Let’s make it unforgettable.. and this wish is a small gift from my side</p>
+            <img src="slide4.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1>Bestie</h1>
+            <p>Yrr tu meri itni itni ashi dost ha kya btau tuja tu soch bhi nhi skti....pta shivji ko daily thanku bolta hu unhone itni pyari dost di muja ..</p>
+            <img src="slide6.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1>Chat Together</h1>
+            <p>Thank you for all yrr hmna kbi face to face batt nhi ki ..online friend bni ..pr offline sa 100 times better bni..bohut ashi ha tu yrr ..asa hi rhna ok.</p>
+            <img src="billi.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1>Always There</h1>
+            <p>You’re the friend jisa ma kbi khoona nhi chahta ..you will be my friend till the end ...agr friendship khtm na ma bhi khtm..aur muja pta tu kbi nhi todegi..muja apna ap sa zada vishwas ha .</p>
+            <img src="slide7.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1>Forever Friends</h1>
+            <p>you will be my bdf(best buddy forever)..kbi nhi jana..ma bohut royunga yrr</p>
+            <img src="buddy.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1> Adventures</h1>
+            <p>tuja yaad ha tuja mna promise kiya tha jb meri job lagegi tuja sbsa mst jagha ki trip krwaunga ...wait krna ok</p>
+            <img src="adventure.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1>You're Incredible</h1>
+            <p>You’re an inspiration yrr pta kitni inspiration milti ha pdna ki tersa . Happy Birthday! baby</p>
+            <img src="slide5.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1>Cheers to You!</h1>
+            <p>Let’s make this year even better than the last. ma pray krunga tu bohut ashi doctor bnegi world ki best ...dakh last year jo ki thi sb mila na tuja</p>
+            <img src="chudail.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div class="slide">
+            <h1>Grateful for You</h1>
+            <p>Every day is brighter because of you. Thank you for everything. thank youuuuu Pooja verma mera friend bnna ka liya ...love u soo much ....bohut lucky hu ma jo teri jasi friend mili...sbi ko nhi milti</p>
+            <img src="slide1.jpg" alt="Best Friend's Photo">
+        </div>
+
+        <div  class="slide">
+            
+            <h1>Celebrate!</h1>
+            <p>This day is all about you! 🎉</p>
+                       <button class="button" onclick="throwConfetti()">Celebrate!</button>
+        </div>
+        <div class="slide">
+            <p>hello pooja kasi ha ...tu itni zada gussa ho gyi baat krna hi bnd kr di itna ignore yrr friend ko itna ignore ...yr phla bhi gussa hoti
+                thi asa nhi krti thi....yr tu sach ma hi dosti tood gyi ....pooja please mt tood ..nhi jaa asa please pooja meri sirf ek hi dost ha agr tu 
+                bhi chali jayegi ma kissa batt krunga ...pooja please mera sath dosti mt todna ...please pooja sorry yaar please pooja nhi tod....pooja sbi dosti 
+                tod deta ha tu mt tod please sbi chala jata ha tu mt ja ....please pooja ..mera liya bohut important friend ha tu ...please pooja nhi todna ...
+                sorry har ek cheez ka liya ....i'm sorry....bta mna kiya kya yrr tu khud bta ...tuna hi batt bnd ki..tuna hi ignore krna shuru kiya...tuna batt nhi ki
+                call kiya vho uthaya nhi....mna toh bs batt krna ko bola ....mna bs batt krna ka liya vho khana bnd ki ...tuja ksm chadai...meri kya galti....
+                tuna tod di ...ignore bhi krri ha pr mera ...kha hu kasa hu ek bar nhi pucha ...kitni kharab khalat ha .....tuja pta ma ab yah likh rha hu friend na laptop aur
+                muja pkd ka rakha gir na jaau....tuna ek hafta sa batt nhi ki....mera socha...teri ksm tuna batt bnd ki na ek roti tk nhi khai ha uska badd...kuch nhi khaya
+                3 din tuja msg bhi nhi kr paya tha ...behosh tha..muja apna bhi nhi pta kya hua...please pooja phla jasi bn ja...pta ma kina zada rooya hu teri ksm itna kbi nhi rooya..kbi nhi...mt tood
+                
+                sorry tuja mna nhi paya...merma bilkul kuch nhi bacha pooja...i'm sorry ...tera birthday ka dakh kitna time sa wait krra tha  kitni mushkil sa yah wish banai thi 
+                kitna din sooya nhi tha ...yah bhi nhi bj payunga...tera liya kuch aur bhi banaya tha....sb reh gya...meri favourite friend ka birthday tha ....abi parsu ha tera birthday..pr 
+                muja apna sham ka nhi pta
+                but muja vishwas ha teri friendship real thi ....ma wait krunga tu batt kregi..tb tk kuch bhi nhi khayunga teri ksm..kuki mersa khaya nhi ja rha
+                ab toh hath bhi dusra bnda upr krta....ma friendship nhi tutna dunga ...jb tk hu...jb nhi hunga fir tera mn
+                <h2>happy birthday baby(jungli billi) </h2>
+            </p>
+            
+        </div>
+        
+
+
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="prevSlide()">&#10094;</button>
+            <button class="nav-button" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+
+        function throwConfetti() {
+            for (let i = 0; i < 100; i++) {
+                let confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+                confetti.style.backgroundColor = getRandomColor();
+                document.body.appendChild(confetti);
+
+                confetti.addEventListener('animationend', () => confetti.remove());
+            }
+        }
+
+
+        function getRandomColor() {
+            const colors = ['#f5576c', '#ff9a9e', '#ffc3a0', '#fad0c4', '#f093fb'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+</body>
+</html>
